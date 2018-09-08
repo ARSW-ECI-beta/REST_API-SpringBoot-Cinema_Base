@@ -29,7 +29,7 @@ En este ejercicio se va a construír un modelo de clases para la capa lógica de
 4. Para posteriores consultas se quieren implementar dos funcionalidades:
 - Un método 'getFunctionsbyCinemaAndDate' que permita obtener todas las funciones de un determinado cine para una determinada fecha.
 - Permitir la compra o reserva de boletos para una determinada posición de sillas en la sala a través del método 'buyTicket'.
-- Se quiere que las consultas realicen un proceso de filtrado de las películas a exhibir, dichos filtros buscan darle la facilidad al usuario de ver las películas más aduecuadas de acuerdo a su necesidad.
+5. Se quiere que las consultas realicen un proceso de filtrado de las películas a exhibir, dichos filtros buscan darle la facilidad al usuario de ver las películas más aduecuadas de acuerdo a su necesidad.
 Ajuste la aplicación (agregando las abstracciones e implementaciones que considere) para que a la clase CinemaServices se le inyecte uno de dos posibles 'filtros' (o eventuales futuros filtros). No se contempla el uso de más de uno a la vez:
 	* (A) Filtrado por género: Permite obtener sólo la lista de las películas de un determinado género (de un determinado cine y una determinada fecha).
 	* (B) Filtrado por disponibilidad :  Permite obtener sólo la lista de las películas que tienen más de 1 asiento vacío (de un determinado cine y una determinada fecha).
