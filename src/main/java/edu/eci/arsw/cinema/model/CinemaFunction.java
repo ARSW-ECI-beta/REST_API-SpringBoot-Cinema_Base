@@ -36,7 +36,7 @@ public class CinemaFunction {
     }
     
     public void buyTicket(int row,int col) throws CinemaException{
-        if (seats.get(row).get(col).equals(false)){
+        if (seats.get(row).get(col).equals(true)){
             seats.get(row).set(col,Boolean.FALSE);
         }
         else{
