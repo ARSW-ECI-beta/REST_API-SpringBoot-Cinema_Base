@@ -31,7 +31,7 @@ En este ejercicio se va a construír un modelo de clases para la capa lógica de
 - Permitir la compra o reserva de boletos para una determinada posición de sillas en la sala a través del método 'buyTicket'.
 5. Se quiere que las consultas realicen un proceso de filtrado de las películas a exhibir, dichos filtros buscan darle la facilidad al usuario de ver las películas más aduecuadas de acuerdo a su necesidad.
 Ajuste la aplicación (agregando las abstracciones e implementaciones que considere) para que a la clase CinemaServices se le inyecte uno de dos posibles 'filtros' (o eventuales futuros filtros). No se contempla el uso de más de uno a la vez:
-	* (A) Filtrado por género: Permite obtener sólo la lista de las películas de un determinado género (de un determinado cine y una determinada fecha).
-	* (B) Filtrado por disponibilidad :  Permite obtener sólo la lista de las películas que tienen más de 1 asiento vacío (de un determinado cine y una determinada fecha).
+	* (A) Filtrado por género: Permite obtener sólo la lista de las películas de un determinado género (de un determinado cine y una determinada fecha) (El género entra por parámetro).
+	* (B) Filtrado por disponibilidad :  Permite obtener sólo la lista de las películas que tienen más de x asientos vacíos (de un determinado cine y una determinada fecha) (La cantidad de asientos entra por parámetro).
 
 5. Agregue las pruebas correspondientes a cada uno de estos filtros, y pruebe su funcionamiento en el programa de prueba, comprobando que sólo cambiando la posición de las anotaciones -sin cambiar nada más-, el programa retorne el listado de películas filtradas de la manera (A) o de la manera (B).
