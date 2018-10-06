@@ -5,8 +5,6 @@ import edu.eci.arsw.cinema.model.Movie;
 import edu.eci.arsw.cinema.persistence.CinemaPersistenceException;
 import edu.eci.arsw.cinema.persistence.impl.InMemoryCinemaPersistence;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.List;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -29,7 +27,7 @@ public class InMemoryPersistenceTest {
     public void saveNewAndLoadTest() throws CinemaPersistenceException{
         InMemoryCinemaPersistence ipct=new InMemoryCinemaPersistence();
 
-        Date functionDate = new GregorianCalendar(2018, 9, 30).getTime();
+        String functionDate = "2018-12-18 15:30";
         List<CinemaFunction> functions= new ArrayList<>();
         CinemaFunction funct1 = new CinemaFunction(new Movie("SuperHeroes Movie 2","Action"),functionDate);
         CinemaFunction funct2 = new CinemaFunction(new Movie("The Night 2","Horror"),functionDate);
@@ -47,7 +45,7 @@ public class InMemoryPersistenceTest {
     public void saveExistingCinemaTest() {
         InMemoryCinemaPersistence ipct=new InMemoryCinemaPersistence();
         
-        Date functionDate = new GregorianCalendar(2018, 9, 30).getTime();
+        String functionDate = "2018-12-18 15:30";
         List<CinemaFunction> functions= new ArrayList<>();
         CinemaFunction funct1 = new CinemaFunction(new Movie("SuperHeroes Movie 2","Action"),functionDate);
         CinemaFunction funct2 = new CinemaFunction(new Movie("The Night 2","Horror"),functionDate);

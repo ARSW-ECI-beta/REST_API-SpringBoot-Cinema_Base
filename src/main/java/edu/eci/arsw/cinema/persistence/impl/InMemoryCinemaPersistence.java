@@ -12,8 +12,6 @@ import edu.eci.arsw.cinema.persistence.CinemaException;
 import edu.eci.arsw.cinema.persistence.CinemaPersistenceException;
 import edu.eci.arsw.cinema.persistence.CinemaPersitence;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -28,7 +26,7 @@ public class InMemoryCinemaPersistence implements CinemaPersitence{
 
     public InMemoryCinemaPersistence() {
         //load stub data
-        Date functionDate = new GregorianCalendar(2018, 9, 25).getTime();
+        String functionDate = "2018-12-18 15:30";
         List<CinemaFunction> functions= new ArrayList<>();
         CinemaFunction funct1 = new CinemaFunction(new Movie("SuperHeroes Movie","Action"),functionDate);
         CinemaFunction funct2 = new CinemaFunction(new Movie("The Night","Horror"),functionDate);
@@ -39,12 +37,12 @@ public class InMemoryCinemaPersistence implements CinemaPersitence{
     }    
 
     @Override
-    public void buyTicket(int row, int col, String cinema, Date date, String movieName) throws CinemaException {
+    public void buyTicket(int row, int col, String cinema, String date, String movieName) throws CinemaException {
         throw new UnsupportedOperationException("Not supported yet."); 
     }
 
     @Override
-    public List<CinemaFunction> getFunctionsbyCinemaAndDate(String cinema, Date date) {
+    public List<CinemaFunction> getFunctionsbyCinemaAndDate(String cinema, String date) {
         throw new UnsupportedOperationException("Not supported yet."); 
     }
 

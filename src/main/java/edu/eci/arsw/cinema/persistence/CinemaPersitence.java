@@ -7,7 +7,6 @@ package edu.eci.arsw.cinema.persistence;
 
 import edu.eci.arsw.cinema.model.Cinema;
 import edu.eci.arsw.cinema.model.CinemaFunction;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -27,7 +26,7 @@ public interface CinemaPersitence {
      * @throws CinemaException if the seat is occupied,
      *    or any other low-level persistence error occurs.
      */
-    public void buyTicket(int row, int col, String cinema, Date date, String movieName) throws CinemaException;
+    public void buyTicket(int row, int col, String cinema, String date, String movieName) throws CinemaException;
     
     /**
      * 
@@ -35,7 +34,7 @@ public interface CinemaPersitence {
      * @param date date
      * @return the list of the functions of the cinema in the given date
      */
-    public List<CinemaFunction> getFunctionsbyCinemaAndDate(String cinema, Date date);
+    public List<CinemaFunction> getFunctionsbyCinemaAndDate(String cinema, String date);
     
     /**
      * 

@@ -9,7 +9,6 @@ import edu.eci.arsw.cinema.model.Cinema;
 import edu.eci.arsw.cinema.model.CinemaFunction;
 import edu.eci.arsw.cinema.persistence.CinemaException;
 import edu.eci.arsw.cinema.persistence.CinemaPersitence;
-import java.util.Date;
 import java.util.List;
 import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,11 +40,11 @@ public class CinemaServices {
     }
     
     
-    public void buyTicket(int row, int col, String cinema, Date date, String movieName){
+    public void buyTicket(int row, int col, String cinema, String date, String movieName){
         throw new UnsupportedOperationException("Not supported yet."); 
     }
     
-    public List<CinemaFunction> getFunctionsbyCinemaAndDate(String cinema, Date date) {
+    public List<CinemaFunction> getFunctionsbyCinemaAndDate(String cinema, String date) {
         throw new UnsupportedOperationException("Not supported yet."); 
     }
 

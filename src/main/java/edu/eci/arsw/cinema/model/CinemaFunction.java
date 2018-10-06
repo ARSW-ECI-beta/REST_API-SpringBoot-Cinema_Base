@@ -9,9 +9,7 @@ import edu.eci.arsw.cinema.persistence.CinemaException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Date;
 import java.util.List;
-import java.util.Objects;
 
 /**
  *
@@ -21,11 +19,11 @@ public class CinemaFunction {
     
     private Movie movie;
     private List<List<Boolean>> seats=new ArrayList<>();
-    private Date date;
+    private String date;
     
     public CinemaFunction(){}
     
-    public CinemaFunction(Movie movie, Date date){
+    public CinemaFunction(Movie movie, String date){
         this.movie=movie;
         this.date=date;
         List<Boolean> row= new ArrayList<>(Arrays.asList(new Boolean[12]));
@@ -56,11 +54,11 @@ public class CinemaFunction {
         this.movie = movie;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
     
