@@ -26,9 +26,9 @@ public class CinemaFunction {
     public CinemaFunction(Movie movie, String date){
         this.movie=movie;
         this.date=date;
-        List<Boolean> row= new ArrayList<>(Arrays.asList(new Boolean[12]));
-        Collections.fill(row, Boolean.TRUE);
         for (int i=0;i<7;i++){
+            List<Boolean> row= new ArrayList<>(Arrays.asList(new Boolean[12]));
+            Collections.fill(row, Boolean.TRUE);
             this.seats.add(row);
         }
     }
