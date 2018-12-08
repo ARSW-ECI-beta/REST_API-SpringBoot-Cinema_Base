@@ -7,7 +7,7 @@
 #### Middleware- gestión de reservas de boletas de cine.
 
 
-## Antes de hacer este ejercicio, realice [el ejercicio introductorio al manejo de Spring y la configuración basada en anotaciones](https://github.com/ARSW-ECI/Spring_LightweightCont_Annotation-DI_Example).
+## Antes de hacer este ejercicio, realice [el ejercicio introductorio al manejo de Spring y la configuración basada en anotaciones](https://github.com/ARSW-ECI-beta/DIP_DI-SPRING_JAVA-GRAMMAR_CHECKER).
 
 En este ejercicio se va a construír un modelo de clases para la capa lógica de una aplicación que permita gestionar la venta de entradas de cine para una prestigiosa compañía. 
 
