@@ -1,17 +1,20 @@
-## Escuela Colombiana de Ingeniería
+### Escuela Colombiana de Ingeniería
 
-## Arquitecturas de Software
+### Arquitecturas de Software
 
-# Componentes y conectores - Parte I.
-
-#### Middleware- gestión de reservas de boletas de cine.
+## Laboratorio Componentes y conectores Middleware - Gestión de reservas de boletas de cine.
 
 
-## Antes de hacer este ejercicio, realice [el ejercicio introductorio al manejo de Spring y la configuración basada en anotaciones](https://github.com/ARSW-ECI/Spring_LightweightCont_Annotation-DI_Example).
+### Dependencias
+* [Ejercicio introductorio al manejo de Spring y la configuración basada en anotaciones](https://github.com/ARSW-ECI/Spring_LightweightCont_Annotation-DI_Example).
+
+### Descripción
 
 En este ejercicio se va a construír un modelo de clases para la capa lógica de una aplicación que permita gestionar la venta de entradas de cine para una prestigiosa compañía. 
 
 ![](img/CinemaClassDiagram.png)
+
+### Parte I
 
 1. Configure la aplicación para que funcione bajo un esquema de inyección de dependencias, tal como se muestra en el diagrama anterior.
 	Lo anterior requiere:
